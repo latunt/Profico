@@ -3,6 +3,9 @@ window.onload=function(){
     const line=document.querySelector(".slider__blocks");
     let count=0;
     let width=Number(blocks[0].offsetWidth)+Number(window.getComputedStyle(blocks[0], null).getPropertyValue("margin-right").replace("px",""));
+    window.addEventListener("resize",function(event){
+        width=Number(blocks[0].offsetWidth)+Number(window.getComputedStyle(blocks[0], null).getPropertyValue("margin-right").replace("px",""));
+    })  
     document.querySelector(".button-next").addEventListener("click",function(){
         count++;
         if(count>=blocks.length){
