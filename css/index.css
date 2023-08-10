@@ -254,17 +254,21 @@ section:last-child{
     width: 20%;
     margin-right: auto;
 }
-.testimonals__title{
-    margin-bottom: 10%;
+.testimonals__companies img{
+    width: 70%;
 }
 .testimonals__companies{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    width: 60%;
+    grid-template-columns: repeat(3,25%);
     grid-template-rows: repeat(3,1fr);
     column-gap: 60px;
     row-gap: 70px;
     background-color: #d8d8d8;
-    padding: 9% 3%;
+    padding: 5% 3%;
+}
+.testimonals__companies img{
+    width: 100%;
 }
 .testimonals__slider{
     margin-top: -40px;
@@ -300,6 +304,7 @@ section:last-child{
 }
 .slider__quotes{
     margin: 0 40% 8% 40%;
+    height: 50px;
 }
 .slider__content{
     width: 70%;
